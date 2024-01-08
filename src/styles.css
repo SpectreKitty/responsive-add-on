@@ -22,7 +22,6 @@ section {
   max-width: 1400px;
   margin: 0 auto;
 }
-
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../images/GoodOmens.jpg);
@@ -32,7 +31,9 @@ header {
   padding-top: 50px;
   padding-bottom: 200px;
   justify-items: center;
+  background-position: center center;
 }
+
 h1,
 h2,
 h3,
@@ -48,11 +49,10 @@ h1 {
   font-size: 96px;
   color: gold;
   line-height: 144px;
-  margin-top: 0;
 }
 header h2 {
   color: gold;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 header a {
   color: gold;
@@ -60,6 +60,7 @@ header a {
   background-color: black;
   padding: 10px 20px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 main h3 {
   opacity: 0.4;
@@ -89,6 +90,11 @@ main p {
   border-radius: 10px;
   max-height: 400px;
 }
+.imagery h4 {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
 .img-responsive {
   max-width: 100%;
   aspect-ratio: 1/1;
@@ -97,6 +103,7 @@ main p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 20px;
+  grid-gap: 20px;
 }
 .card {
   background-color: white;
@@ -150,7 +157,11 @@ footer a {
   color: white;
   opacity: 0.7;
 }
-
+@media (max-width: 1025px) {
+  .music .grid-3-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
@@ -169,10 +180,12 @@ footer a {
   .characters {
     grid-template-columns: 1fr;
   }
-  .imagery .grid-3-columns {
+  .grid-3-columns {
     grid-template-columns: 1fr;
   }
-
+  .music .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
   footer .grid-container {
     grid-template-columns: 1fr;
   }
@@ -201,5 +214,13 @@ footer a {
   footer {
     font-size: 8px;
     padding: 5px 2px 5px;
+  }
+  .music .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 281px) {
+  .music {
+    display: none;
   }
 }

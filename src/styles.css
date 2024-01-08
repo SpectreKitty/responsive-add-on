@@ -18,6 +18,35 @@ section {
   background-color: lightgray;
   padding-top: 20px;
 }
+.imagery h4 {
+  background: rgb(14, 14, 14);
+  background: linear-gradient(
+    135deg,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(135, 135, 152, 0) 78%,
+    rgba(233, 242, 244, 1) 100%
+  );
+}
+.character-heading h4 {
+  background: rgb(14, 14, 14);
+  background: linear-gradient(
+    247deg,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(135, 135, 152, 0) 78%,
+    rgba(233, 242, 244, 1) 100%
+  );
+  border-radius: 10px;
+}
+.music h4 {
+  background: rgb(14, 14, 14);
+  background: linear-gradient(
+    247deg,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(135, 135, 152, 0) 78%,
+    rgba(233, 242, 244, 1) 100%
+  );
+  border-radius: 10px;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -91,6 +120,13 @@ main p {
   border: 2px black solid;
   padding: 10px;
   border-radius: 10px;
+  background: rgb(14, 14, 14);
+  background: linear-gradient(
+    0deg,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(135, 135, 152, 0) 78%,
+    rgba(233, 242, 244, 1) 100%
+  );
 }
 .characters img {
   max-width: 100%;
@@ -118,6 +154,13 @@ main p {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
+  background: rgb(14, 14, 14);
+  background: linear-gradient(
+    0deg,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(135, 135, 152, 0) 78%,
+    rgba(233, 242, 244, 1) 100%
+  );
 }
 .card-header {
   display: grid;
@@ -141,6 +184,7 @@ footer {
   color: gold;
   padding: 30px 0 20px 50px;
   text-align: center;
+  background-position: center center;
 }
 footer .grid-container {
   display: grid;
@@ -164,7 +208,7 @@ footer a {
   color: white;
   opacity: 0.7;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1185px) {
   .music .grid-3-columns {
     grid-template-columns: 1fr 1fr;
   }

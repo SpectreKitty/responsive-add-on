@@ -91,6 +91,7 @@ main p {
 }
 .img-responsive {
   max-width: 100%;
+  aspect-ratio: 1/1;
 }
 .grid-3-columns {
   display: grid;
@@ -107,6 +108,11 @@ main p {
 .card-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+.embed {
+  max-width: 100%;
+  aspect-ratio: 1/1;
 }
 .card-body {
   border-radius: 10px;
@@ -163,15 +169,20 @@ footer a {
   .characters {
     grid-template-columns: 1fr;
   }
+  .imagery .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
 
   footer .grid-container {
     grid-template-columns: 1fr;
   }
   footer {
     font-size: 12px;
+    padding: 5px;
   }
 }
-@media (max-width: 431px) {
+
+@media (max-width: 541px) {
   header {
     padding: 10px;
   }
@@ -184,7 +195,11 @@ footer a {
   header a {
     font-size: 8px;
   }
+  section {
+    padding: 5px;
+  }
   footer {
     font-size: 8px;
+    padding: 5px 2px 5px;
   }
 }
